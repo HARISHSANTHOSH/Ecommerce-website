@@ -1,0 +1,212 @@
+
+#header{
+
+   
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+#pk{
+
+    background-color: white;
+    border-radius: 50px;
+
+}
+#kp{
+
+    background-color: white;
+    border-radius: 50px;
+}
+#shan{
+
+    font-size: 60px;
+    font-family: var(--lg-font);
+
+
+}
+#pk:hover{
+    background-color: aqua;
+    transition: 0.5s;
+
+
+}
+#kp:hover{
+    background-color: aqua;
+    transition: 0.5s;
+
+
+}
+#sp{
+    color: white;
+    
+}
+
+#aa:hover{
+    background-color: aqua;
+    transition: 0.5s;
+    
+    
+}
+#bb:hover{
+    background-color: aqua;
+    transition: 0.5s;
+}
+#cc:hover{
+    background-color: aqua;
+    transition: 0.5s;
+}
+#dd:hover{
+    background-color: aqua;
+    transition: 0.5s;
+}
+#ee:hover{
+    background-color: aqua;
+    transition: 0.5s;
+}
+#ff:hover{
+    background-color: aqua;
+    transition: 0.5s;
+}
+#gg:hover{
+    background-color: aqua;
+    transition: 0.5s;
+}
+#hh:hover{
+    background-color: aqua;
+    transition: 0.5s;
+}
+/*offers */
+
+#offers{
+    background: url(harish.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+#zz{
+    
+
+    background-color: white;
+}
+#zz:hover{
+    background-color: aqua;
+    transition: 0.5s;
+   
+}
+#cs:hover{
+
+    
+    transition: 0.5s;
+}
+/*cosmetic*/
+#s:hover{
+
+    transform: translateY(-8%);
+    transition: 0.6s;
+}
+#p:hover{
+
+    transform: translateY(-8%);
+    transition: 0.6s;
+}
+#r:hover{
+
+    transform: translateY(-8%);
+    transition: 0.6s;
+}
+#k:hover{
+
+    transform: translateY(-8%);
+    transition: 0.6s;
+}
+#z:hover{
+
+    transform: translateY(-8%);
+    transition: 0.6s;
+}
+#w:hover{
+
+    transform: translateY(-8%);
+    transition: 0.6s;
+}
+#y:hover{
+
+    transform: translateY(-8%);
+    transition: 0.6s;
+}
+#u:hover{
+
+    transform: translateY(-8%);
+    transition: 0.6s;
+}
+#t:hover{
+
+    transform: translateY(-8%);
+    transition: 0.6s;
+}
+#v:hover{
+
+    transform: translateY(-8%);
+    transition: 0.6s;
+}
+
+
+/*footer*/
+
+*{
+
+    margin: 0;
+
+}
+.man{
+
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(to right,#00093c,#2d0b00);
+    color: #fff;
+    padding: 100px 0 30px;
+    border-top-left-radius: 125px;
+    font-size: 30px;
+    line-height: 20px;
+}
+
+#ddd{
+
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+#dddd{
+    flex-basis: 25%;
+    padding: 25px;
+}
+
+#kk h3{
+
+    width: fit-content;
+    margin-bottom: 25px;
+    position: relative;
+}
+.emailid{
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    line-height: 10px;
+}
+.social-icons .fab{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #000;
+    background: #fff;
+    margin-right: 25px;
+    cursor: pointer;
+    padding: 10px;
+}

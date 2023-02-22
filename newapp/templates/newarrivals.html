@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+      <link rel="stylesheet" href="{% static 'styles.css' %}">
+      <script src="https://kit.fontawesome.com/9fe76d5e45.js" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top" style="box-shadow: 0 3px 9px 3px rgba(0,0,0,0.1); height: 70px;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+
+        <span class="tex-uppercase  m5-2" style="color: black; font-weight: 800; margin-left: 8px; font-size: 30px;"><i class="fa-solid fa-ghost" style="color:red;margin-right:10px"></i>Day Look</span>
+
+
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#" style="color: black; margin-left: 27px;">Home</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" style="color: black; margin-left: 20px;" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Register
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#" style="border-bottom: 1px solid lightgrey;">Shop Register</a></li>
+                  <li><a class="dropdown-item" href="#">User Register</a></li>
+
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" style="color: black; margin-left: 15px" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Login
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#" style="border-bottom: 1px solid lightgrey;">Shop Login</a></li>
+                  <li><a class="dropdown-item" href="#">User Login</a></li>
+
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#" style="margin-left: 15px;" id="kop">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#" style="margin-left: 15px;">Contact</a>
+              </li>
+
+
+
+            <form class="d-flex">
+                              <input class="form-control me-2 mt-2" type="search" style="margin-left: 90px; height: 36px; width: 300px; border-radius:25px;border:1px solid rgb(239, 243, 177);background-color: rgb(239, 243, 177)" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-rgb(239, 243, 177) mt-2" type="submit" style="height: 40px; border-radius:25px;margin-left:-50px"><i class="fa-solid fa-magnifying-glass"></i></button>
+
+              <button type="button" class="btn position-relative" style="font-size: 25px; margin-left: 5px; color: rgb(25, 15, 172);"><a href=""><i class="fa-solid fa-bag-shopping" style="font-size:15px;margin-left:5px;color:white;background-color:rgba(74, 91, 117);border-radius:30px;padding:10px;"></i></a></button>
+              <button type="button" class="btn position-relative" style="font-size: 25px; margin-left: 0px; color: red;"><a href="" style="color: red;"><i class="fa fa-heart" style="font-size:15px;color:white;background-color:rgba(74, 91, 117);padding:10px;border-radius:30px"></i></a></button>
+
+            </form>
+          </div>
+        </div>
+        <button type="button" data-bs-toggle="offcanvas" data-bs-target="#f" style="position: absolute;left: 1206px; background-color: rgb(239, 247, 247);border: 1px solid rgb(237, 241, 241);"><i class="fa-solid fa-bars" style="background-color: rgb(210, 216, 216);"></i></button>
+
+        <div class="offcanvas offcanvas-end text-white bg-primary" id="f">
+          <div class="offcanvas-header">
+            <h5>NavBar</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+          </div>
+          <div class="offcanvas-body">
+            <li>Hpome</li>
+          </div>
+        </div>
+      </nav>
+      <div class="container" style="margin-top: 110px; width: 1900px;">
+        <div class="title text-center">
+
+
+
+
+        </div>
+        <div class="row" style="margin-top: 50px;" >
+          <div class="col-md-6 col-lg-4 col-xl-3 p-2 ">
+              <div class="card shadow shadow-5px" style="width: 250px; height: 300px;" id="s">
+                  <img src="{% static 'freak/images/model-1.webp' %}" class="card-img-top" alt="..." style="padding-top: 0px; width: 248px; height: 300px;">
+                  <div class="card-body">
+
+                    <p style="margin-left: 76px;color: rgb(109, 114, 37); margin-top:-8px">Wisstler</p>
+                      <p style="margin-top:-15px;font-size:14px;margin-left:14px;font-family: 'Times New Roman', Times, serif;font-weight:100">Floral Print Fit & Flare dress</p>
+                      <p style="margin-left: 30px;margin-top:-18px;font-size:14px;font-weight:600;">₹989 <strong style="font-weight:350;margin-left:10px;text-decoration:line-through;font-size:12px">₹17,99</strong></p><p style="margin-top:-34px;font-size:11px;margin-left:109px;color:rgb(109, 114, 37)">(₹45% off)</p>
+                   <a href="#"> <i class="fa-solid fa-heart" style="position: absolute;top: 3px;left: 210px; font-size: 26px; color: red;"></i> </a>
+                    <button type="button" style="border: 1px solid black;border-radius: 50px;padding: 10px;width: 150px;margin-left: 25px;" id="aa">Add to Cart</button>
+
+                  </div>
+                </div>
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+              <div class="card shadow shadow-5px"  style="width: 250px; height: 300px;" id="p">
+                  <img src="{% static 'freak/images/model-2.webp' %}" class="card-img-top" alt="..."  style="padding-top: 0px; height: 300px; width: 248px; ">
+                  <div class="card-body">
+
+                    <p style="margin-left: 76px;color: rgb(109, 114, 37); margin-top:-8px">Janasya</p>
+                      <p style="margin-top:-15px;font-size:14px;margin-left:27px;font-family: 'Times New Roman', Times, serif;">Printed Tired Waist Dress </p>
+                      <p style="margin-left: 40px;margin-top:-18px;font-size:14px;font-weight:600;">₹700 <strong style="font-weight:350;margin-left:10px;text-decoration:line-through;font-size:12px">₹18,99</strong></p><p style="margin-top:-34px;font-size:11px;margin-left:119px;color:rgb(109, 114, 37)">(₹65% off)</p>
+                   <a href="#"> <i class="fa-solid fa-heart" style="position: absolute;top: 3px;left: 210px; font-size: 26px; color: red;"></i> </a>
+                    <button type="button" style="border: 1px solid black;border-radius: 50px;padding: 10px;width: 150px;margin-left: 25px;" id="bb">Add to Cart</button>
+
+                  </div>
+                </div>
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+              <div class="card shadow shadow-5px"  style="width: 250px; height: 300px;" id="r">
+                  <img src="{% static 'freak/images/model-3.webp' %}" class="card-img-top" alt="..." style="width: 248px; height: 300px;;">
+                  <div class="card-body">
+                   <p style="margin-left: 76px;color: rgb(109, 114, 37); margin-top:-8px">Janasya</p>
+                      <p style="margin-top:-15px;font-size:14px;margin-left:14px;font-family: 'Times New Roman', Times, serif;">Floral Print Fit & Flare dress</p>
+                                         <p style="margin-left: 30px;margin-top:-18px;font-size:14px;font-weight:600;">₹850 <strong style="font-weight:350;margin-left:10px;text-decoration:line-through;font-size:12px">₹18,00</strong></p><p style="margin-top:-34px;font-size:11px;margin-left:109px;color:rgb(109, 114, 37)">(₹63% off)</p>
+                   <a href="#"> <i class="fa-solid fa-heart" style="position: absolute;top: 3px;left: 210px; font-size: 26px; color: red;"></i> </a>
+                    <button type="button" style="border: 1px solid black;border-radius: 50px;padding: 10px;width: 150px;margin-left: 25px;" id="cc">Add to Cart</button>
+
+
+                  </div>
+                </div>
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+              <div class="card shadow shadow-5px"  style="width: 250px; height: 300px;" id="k">
+                  <img src="{% static 'freak/images/model-4.webp' %}" class="card-img-top" alt="..." style="padding-top: 0px;height: 300px;">
+                  <div class="card-body">
+                   <p style="margin-left: 89px;color: rgb(109, 114, 37); margin-top:-8px">Tior</p>
+                      <p style="margin-top:-15px;font-size:14px;margin-left:34px;font-family: 'Times New Roman', Times, serif;">V-Necked Fit & Flare Dress </p>
+                                         <p style="margin-left: 50px;margin-top:-18px;font-size:14px;font-weight:600;">₹720 <strong style="font-weight:350;margin-left:10px;text-decoration:line-through;font-size:12px">₹14,00</strong></p><p style="margin-top:-34px;font-size:11px;margin-left:129px;color:rgb(109, 114, 37)">(₹50% off)</p>
+                   <a href="#"> <i class="fa-solid fa-heart" style="position: absolute;top: 3px;left: 210px; font-size: 26px; color: red;"></i> </a>
+                    <button type="button" style="border: 1px solid black;border-radius: 50px;padding: 10px;width: 150px;margin-left: 35px;" id="dd">Add to Cart</button>
+
+                  </div>
+                </div>
+          </div>
+        </div>
+        <div class="row" style="margin-top: 250px;">
+          <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+              <div class="card shadow shadow-5px" style="width: 250px; height: 300px;" id="u">
+                    <img src="{% static 'freak/images/model-7.webp' %}" class="card-img-top" alt="..." style="padding-top: 0px;height: 300px;">
+
+                  <div class="card-body">
+                    <p style="margin-left: 76px;color: rgb(109, 114, 37); margin-top:-8px">Tulsattva</p>
+                      <p style="margin-top:-15px;font-size:14px;margin-left:14px;font-family: 'Times New Roman', Times, serif;">Floral Print Fit & Flare dress</p>
+                                       <p style="margin-left: 30px;margin-top:-18px;font-size:14px;font-weight:600;">₹950 <strong style="font-weight:350;margin-left:10px;text-decoration:line-through;font-size:12px">₹19,90</strong></p><p style="margin-top:-34px;font-size:11px;margin-left:109px;color:rgb(109, 114, 37)">(₹50% off)</p>
+                   <a href="#"> <i class="fa-solid fa-heart" style="position: absolute;top: 3px;left: 210px; font-size: 26px; color: red;"></i> </a>
+                    <button type="button" style="border: 1px solid black;border-radius: 50px;padding: 10px;width: 150px;margin-left: 25px;" id="ee">Add to Cart</button>
+
+                  </div>
+                </div>
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+              <div class="card shadow shadow-5px"  style="width: 250px; height: 300px;" id="t">
+                  <img src="{% static 'freak/images/model-8.webp' %}" class="card-img-top" alt="..."  style="padding-top: 0px; height: 300px; width: 248px; ">
+                  <div class="card-body">
+                   <p style="margin-left: 76px;color: rgb(109, 114, 37); margin-top:-8px">Mascali.Co</p>
+                      <p style="margin-top:-15px;font-size:14px;margin-left:24px;font-family: 'Times New Roman', Times, serif;">Floral Print Fit & Flare dress</p>
+                                     <p style="margin-left: 40px;margin-top:-18px;font-size:14px;font-weight:600;">₹730 <strong style="font-weight:350;margin-left:10px;text-decoration:line-through;font-size:12px">₹4,240</strong></p><p style="margin-top:-34px;font-size:11px;margin-left:119px;color:rgb(109, 114, 37)">(₹60% off)</p>
+                  <a href="#">  <i class="fa-solid fa-heart" style="position: absolute;top: 3px;left: 210px; font-size: 26px; color: red;"></i> </a>
+                    <button type="button" style="border: 1px solid black;border-radius: 50px;padding: 10px;width: 150px;margin-left: 25px;" id="ff">Add to Cart</button>
+
+                  </div>
+                </div>
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+              <div class="card shadow shadow-5px"  style="width: 250px; height: 300px;" id="v">
+                  <img src="{% static 'freak/images/model-20.jpg' %}" class="card-img-top" alt="..." style="width: 248px; height: 300px;;">
+                  <div class="card-body">
+                    <p style="margin-left: 92px;color: rgb(109, 114, 37); margin-top:-8px">Fig</p>
+                      <p style="margin-top:-15px;font-size:14px;margin-left:34px;font-family: 'Times New Roman', Times, serif;">Pleated Fit & Flare dress</p>
+                                     <p style="margin-left: 45px;margin-top:-18px;font-size:14px;font-weight:600;">₹850 <strong style="font-weight:350;margin-left:10px;text-decoration:line-through;font-size:12px">₹14,00</strong></p><p style="margin-top:-34px;font-size:11px;margin-left:125px;color:rgb(109, 114, 37)">(₹50 off)</p>
+                   <a href="#"> <i class="fa-solid fa-heart" style="position: absolute;top: 3px;left: 210px; font-size: 26px; color: red;"></i> </a>
+                    <button type="button" style="border: 1px solid black;border-radius: 50px;padding: 10px;width: 150px;margin-left: 25px;" id="gg">Add to Cart</button>
+
+
+                  </div>
+                </div>
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+              <div class="card shadow shadow-5px"  style="width: 250px; height: 300px;" id="w">
+                  <img src="{% static 'freak/images/model-10.webp' %}" class="card-img-top" alt="..." style="padding-top: 0px; height: 300px;">
+                  <div class="card-body">
+                   <p style="margin-left: 96px;color: rgb(109, 114, 37); margin-top:-8px">Fig</p>
+                      <p style="margin-top:-15px;font-size:14px;margin-left:34px;font-family: 'Times New Roman', Times, serif;">Floral Print Fit & Flare dress</p>
+                                         <p style="margin-left: 44px;margin-top:-18px;font-size:14px;font-weight:600;color: rgb(65, 63, 63);">₹750 <strong style="font-weight:350;margin-left:10px;text-decoration:line-through;font-size:12px">₹18,00</strong></p><p style="margin-top:-34px;font-size:11px;margin-left:124px;color:rgb(109, 114, 37)">(₹30% off)</p>
+                   <a href="#"> <i class="fa-solid fa-heart" style="position: absolute;top: 3px;left: 210px; font-size: 26px; color: red;"></i> </a>
+                    <button type="button" style="border: 1px solid black;border-radius: 50px;padding: 10px;width: 150px;margin-left: 29px;" id="hh">Add to Cart</button>
+
+                  </div>
+                </div>
+          </div>
+        </div>
+        <div class="row" style="margin-top: 250px;">
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                <div class="card shadow shadow-5px" style="width: 250px; height: 300px;" id="u">
+                    <img src="{% static 'freak/images/model-21.webp' %}" class="card-img-top" alt="..." style="padding-top: 0px; width: 248px; height: 298px;">
+                    <div class="card-body">
+                      <p style="margin-left: 96px;color: rgb(109, 114, 37); margin-top:-8px">Fig</p>
+                      <p style="margin-top:-15px;font-size:14px;margin-left:34px;font-family: 'Times New Roman', Times, serif;">Floral Print Sheath dress</p>
+                                         <p style="margin-left: 50px;margin-top:-18px;font-size:14px;font-weight:600;color: rgb(65, 63, 63);">₹650 <strong style="font-weight:350;margin-left:10px;text-decoration:line-through;font-size:12px;color: rgb(65, 63, 63);">₹12,00</strong></p><p style="margin-top:-34px;font-size:11px;margin-left:129px;color:rgb(109, 114, 37)">(₹60% off)</p>
+                     <a href="#"> <i class="fa-solid fa-heart" style="position: absolute;top: 3px;left: 210px; font-size: 26px; color: red;"></i> </a>
+                      <button type="button" style="border: 1px solid black;border-radius: 50px;padding: 10px;width: 150px;margin-left: 25px;" id="ee">Add to Cart</button>
+
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                <div class="card shadow shadow-5px"  style="width: 250px; height: 300px;" id="t">
+                    <img src="{% static 'freak/images/model-12.webp' %}" class="card-img-top" alt="..."  style="padding-top: 0px; height: 300px; width: 248px; ">
+                    <div class="card-body">
+                      <p style="margin-left: 76px;color: rgb(109, 114, 37); margin-top:-8px">Hello Design</p>
+                      <p style="margin-top:-15px;font-size:14px;margin-left:34px;font-family: 'Times New Roman', Times, serif;">Floral Print Fit & Flare dress</p>
+                                        <p style="margin-left: 50px;margin-top:-18px;font-size:14px;font-weight:600;">₹950 <strong style="font-weight:350;margin-left:10px;text-decoration:line-through;font-size:12px;color: rgb(65, 63, 63);">₹13,50</strong></p><p style="margin-top:-34px;font-size:11px;margin-left:129px;color:rgb(109, 114, 37)">(₹67% off)</p>
+                    <a href="#">  <i class="fa-solid fa-heart" style="position: absolute;top: 3px;left: 210px; font-size: 26px; color: red;"></i> </a>
+                      <button type="button" style="border: 1px solid black;border-radius: 50px;padding: 10px;width: 150px;margin-left: 29px;" id="ff">Add to Cart</button>
+
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                <div class="card shadow shadow-5px"  style="width: 250px; height: 300px;" id="v">
+                    <img src="{% static 'freak/images/model-13.webp' %}" class="card-img-top" alt="..." style="width: 248px; height: 300px;">
+                    <div class="card-body">
+                     <p style="margin-left: 76px;color: rgb(109, 114, 37); margin-top:-8px">Kiana House</p>
+                      <p style="margin-top:-15px;font-size:14px;margin-left:34px;font-family: 'Times New Roman', Times, serif;">Floral Printed Round Neck</p>
+                                         <p style="margin-left: 50px;margin-top:-18px;font-size:14px;font-weight:600;">₹900 <strong style="font-weight:350;margin-left:10px;text-decoration:line-through;font-size:12px;color: rgb(65, 63, 63);">₹13,00</strong></p><p style="margin-top:-34px;font-size:11px;margin-left:129px;color:rgb(109, 114, 37)">(₹50% off)</p>
+                     <a href="#"> <i class="fa-solid fa-heart" style="position: absolute;top: 3px;left: 210px; font-size: 26px; color: red;"></i> </a>
+                      <button type="button" style="border: 1px solid black;border-radius: 50px;padding: 10px;width: 150px;margin-left: 35px;" id="gg">Add to Cart</button>
+
+
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                <div class="card shadow shadow-5px"  style="width: 250px; height: 300px;" id="w">
+                    <img src="{% static 'freak/images/model-22.webp' %}" class="card-img-top" alt="..." style="padding-top: 0px; height: 298px; width:248px">
+                    <div class="card-body">
+                      <p style="margin-left: 96px;color: rgb(109, 114, 37); margin-top:-8px">Aask</p>
+                      <p style="margin-top:-15px;font-size:14px;margin-left:49px;font-family: 'Times New Roman', Times, serif;">Floral Print Fleated Fit</p>
+                                        <p style="margin-left: 56px;margin-top:-18px;font-size:14px;font-weight:600;">₹880 <strong style="font-weight:350;margin-left:10px;text-decoration:line-through;font-size:12px;color: rgb(65, 63, 63);">₹12,00</strong></p><p style="margin-top:-34px;font-size:11px;margin-left:135px;color:rgb(109, 114, 37)">(₹29% off)</p>
+                     <a href="#"> <i class="fa-solid fa-heart" style="position: absolute;top: 3px;left: 210px; font-size: 26px; color: red;"></i> </a>
+                      <button type="button" style="border: 1px solid black;border-radius: 50px;padding: 10px;width: 150px;margin-left: 35px;" id="hh">Add to Cart</button>
+
+                    </div>
+                  </div>
+            </div>
+          </div>
+          <div class="row" style="margin-top: 250px;">
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                <div class="card shadow shadow-5px" style="width: 250px; height: 300px;" id="u">
+                    <img src="{% static 'freak/images/model-29.jpg' %}" class="card-img-top" alt="..." style="padding-left: 0px; width: 248px; height: 300px;margin-left:0px">
+                    <div class="card-body">
+                     <p style="margin-left: 106px;color: rgb(109, 114, 37); margin-top:-8px">Fig</p>
+                      <p style="margin-top:-15px;font-size:14px;margin-left:44px;font-family: 'Times New Roman', Times, serif;">Leaf Printed Tired Dress</p>
+                                         <p style="margin-left: 50px;margin-top:-18px;font-size:14px;font-weight:600;">₹650 <strong style="font-weight:350;margin-left:10px;text-decoration:line-through;font-size:12px;color: rgb(65, 63, 63);">₹1200</strong></p><p style="margin-top:-34px;font-size:11px;margin-left:129px;color:rgb(109, 114, 37)">(₹70 off)</p>
+                     <a href="#"> <i class="fa-solid fa-heart" style="position: absolute;top: 3px;left: 210px; font-size: 26px; color: red;"></i> </a>
+                      <button type="button" style="border: 1px solid black;border-radius: 50px;padding: 10px;width: 150px;margin-left: 35px;" id="ee">Add to Cart</button>
+
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                <div class="card shadow shadow-5px"  style="width: 250px; height: 300px;" id="t">
+                    <img src="{% static 'freak/images/model-16.webp' %}" class="card-img-top" alt="..."  style="padding-top: 0px; height: 322px; width: 248px; ">
+                    <div class="card-body">
+                      <p style="margin-left: 106px;color: rgb(109, 114, 37); margin-top:-8px">Rio</p>
+                      <p style="margin-top:-15px;font-size:14px;margin-left:54px;font-family: 'Times New Roman', Times, serif;">Floral Print V-Neck</p>
+                                        <p style="margin-left: 53px;margin-top:-18px;font-size:14px;font-weight:600;">₹650 <strong style="font-weight:350;margin-left:10px;text-decoration:line-through;font-size:12px;color: rgb(65, 63, 63);">₹13,00</strong></p><p style="margin-top:-34px;font-size:11px;margin-left:133px;color:rgb(109, 114, 37)">(₹50% off)</p>
+                    <a href="#">  <i class="fa-solid fa-heart" style="position: absolute;top: 3px;left: 210px; font-size: 26px; color: red;"></i> </a>
+                      <button type="button" style="border: 1px solid black;border-radius: 50px;padding: 10px;width: 150px;margin-left: 35px;" id="ff">Add to Cart</button>
+
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                <div class="card shadow shadow-5px"  style="width: 250px; height: 300px;" id="v">
+                    <img src="{% static 'freak/images/model-30.webp' %}" class="card-img-top" alt="..." style="width: 248px; height: 300px;padding-left:0px;">
+                    <div class="card-body">
+                       <p style="margin-left: 76px;color: rgb(109, 114, 37); margin-top:-8px">Teamspirit</p>
+                      <p style="margin-top:-15px;font-size:14px;margin-left:54px;font-family: 'Times New Roman', Times, serif;">Stripped Cotton Polo</p>
+                                         <p style="margin-left: 53px;margin-top:-18px;font-size:14px;font-weight:600;">₹950 <strong style="font-weight:350;margin-left:10px;text-decoration:line-through;font-size:12px;color: rgb(65, 63, 63);">₹15,00</strong></p><p style="margin-top:-34px;font-size:11px;margin-left:133px;color:rgb(109, 114, 37)">(₹20% off)</p>
+                     <a href="#"> <i class="fa-solid fa-heart" style="position: absolute;top: 3px;left: 210px; font-size: 26px; color: red;"></i> </a>
+                      <button type="button" style="border: 1px solid black;border-radius: 50px;padding: 10px;width: 150px;margin-left: 35px;" id="gg">Add to Cart</button>
+
+
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                <div class="card shadow shadow-5px"  style="width: 250px; height: 300px;" id="w">
+                    <img src="{% static 'freak/images/model-28.jpg' %}" class="card-img-top" alt="..." style="padding-top: 0px; height: 300px;">
+                    <div class="card-body">
+                       <p style="margin-left: 76px;color: rgb(109, 114, 37); margin-top:-8px">Wistler</p>
+                      <p style="margin-top:-15px;font-size:14px;margin-left:14px;font-family: 'Times New Roman', Times, serif;">Floral Print Fit & Flare dress</p>
+                     <p style="margin-left: 40px;margin-top:-18px;font-size:14px;font-weight:600;">₹650 <strong style="font-weight:350;margin-left:10px;text-decoration:line-through;font-size:12px;color: rgb(65, 63, 63);">₹1100</strong></p><p style="margin-top:-34px;font-size:11px;margin-left:120px;color:rgb(109, 114, 37)">(₹30% off)</p>
+                     <a href="#"> <i class="fa-solid fa-heart" style="position: absolute;top: 3px;left: 210px; font-size: 26px; color: red;"></i> </a>
+                      <button type="button" style="border: 1px solid black;border-radius: 50px;padding: 10px;width: 150px;margin-left: 25px;" id="hh">Add to Cart</button>
+
+                    </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+
+        </div>
+
+
+
+
+
+
+         </div>
+<footer class="man" style=" background: linear-gradient(to right,#00093c,#2d0b00);margin-top:200px;width:100%;positon:absolute;color:#fff;bottom:0;padding:100px o 30px;border-top-left-radius:125px;font-size:30px;line-height:20px;height:58vh">
+        <div class="row" id="ddd" style="width:85%;margin:auto;display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:space-between">
+            <div class="col" id="dddd" style="flex-basis:25%;padding:25px">
+                <h1 style="margin-bottom: 25px; margin-top:70px">FashionX</h1>
+                <p style="font-size: 15px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui libero eligendi vero exercitationem! Doloribus provident, voluptas vitae illum temporibus in esse fugiat magni accusamus optio quo suscipit reiciendis repudiandae consequatur?</p>
+            </div>
+            <div class="col" id="kk" style="width:fit-content;margin-bottom:25px;position:relative">
+                <h3 style="margin-top:70px">Office</h3>
+                <p style="font-size: 15px; margin-top:40px">ITPL Road</p>
+                <p style="font-size: 15px;">Whitefield banglore</p>
+                <p style="font-size: 15px;">Karnataka, PIN 560066, India</p>
+                <p class="emailid" style="font-size: 15px; padding-bottom: 3px;">hkc@gmail.com</p>
+                <h4 style="font-size: 15px;">8848622015</h4>
+            </div>
+            <div class="col">
+                <h4 style="margin-left: 30px; margin-top:70px">Links</h3>
+                    <ul style="list-style-type: none; margin-bottom: 12px;">
+                        <li style="margin-top: 30px;"><a href="" style="text-decoration: none; color: white; font-size: 15px; margin-top: 40px;">Home</a></li>
+                        <li><a href="" style="text-decoration: none; color: white; font-size: 15px;">Services</a></li>
+                        <li><a href="" style="text-decoration: none; color: white; font-size: 15px;">About Us</a></li>
+                        <li><a href="" style="text-decoration: none; color: white; font-size: 15px;">Features</a></li>
+                        <li><a href="" style="text-decoration: none; color: white; font-size: 15px;">Contactus</a></li>
+                    </ul>
+            </div>
+            <div class="col">
+                <div class="social-icons" style="margin-top:70px">
+                    <i class="fa-brands fa-facebook" style="cursor: pointer; margin-right: 10px;"></i>
+                    <i class="fa-brands fa-twitter" style="cursor: pointer; margin-right: 10px;" ></i>
+                    <i class="fa-brands fa-instagram" style="cursor: pointer; margin-right: 10px;"></i>
+                    <i class="fa-brands fa-whatsapp" style="cursor: pointer; margin-right: 10px;"></i>
+                </div>
+
+
+            </div>
+        </div>
+    <hr style="width: 90%; border: 0; border-bottom: 1px solid #ccc; margin: 20px auto;">
+
+
+    </footer>
+
+
+
+
+
+</body>
+</html>

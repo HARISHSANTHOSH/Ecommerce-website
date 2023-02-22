@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+
+    <tr>
+        <th>Video name</th>
+        <th>Video</th>
+
+
+
+
+    </tr>
+    {% for i,j in mylist %}
+    <tr>
+
+       <td>{{i}}</td>
+        <td>
+             <video controls style="height:300px;width:500px">
+                 <source src="{% static j %}">
+
+             </video>
+
+        </td>
+
+
+
+    </tr>
+    {% endfor %}
+
+
+
+
+
+
+
+
+
+
+
+</table>
+
+</body>
+</html>
+
